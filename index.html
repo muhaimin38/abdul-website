@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Muhaimin | Professional Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <meta name="description" content="Abdul Muhaimin - Professional web developer building responsive websites for restaurants, portfolios, and businesses. Pakistan based.">
+</head>
+<body>
+  <!-- Mobile menu toggle -->
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      <i class="fas fa-code"></i> Abdul
+    </a>
+    <ul class="nav-list" id="navbar">
+      <li><a href="#home" class="nav-link active" data-section="home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#services" class="nav-link" data-section="services"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i>
+          <span> Web Developer</span>
+        </div>
+        <h1 class="hero-title">I Build <span class="gradient-text">Modern Websites</span></h1>
+        <h2 class="hero-subtitle">Clean, responsive websites using HTML, CSS & JavaScript. No frameworks, no bloat—just pure performance.</h2>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number"></div>
+            <div class="stat-label">_</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number"></div>
+            <div class="stat-label">_</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number"></div>
+            <div class="stat-label">_</div>
+          </div>
+        </div>
+     
+        <div class="contact-info">
+          <a href="mailto:pakabdul54@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i> pakabdul54@gmail.com
+          </a>
+          <a href="tel:+923288735509" class="contact-link">
+            <i class="fas fa-phone"></i> +92 3288735509
+          </a>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary hero-btn">
+            <i class="fas fa-rocket"></i> Hire Me Now
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fas fa-eye"></i> View Projects
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#services" class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services section">
+      <h2 class="section-title">What I Offer</h2>
+      <p class="section-subtitle">Professional web solutions for small businesses and individuals</p>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Restaurant Websites</h3>
+          <p>Menu display, online ordering, reservations, WhatsApp integration</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Portfolio Websites</h3>
+          <p>Professional showcase for freelancers and creatives</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Business Landing Pages</h3>
+          <p>High-converting pages that generate leads</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Contact Forms</h3>
+          <p>Working forms that deliver messages to your email</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>WhatsApp Integration</h3>
+          <p>One-click WhatsApp buttons for instant customer chat</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Perfect on phones, tablets, laptops, everything</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)">
+      <h2 class="section-title">Live Demos</h2>
+      <p class="section-subtitle">Click to see demos of  websites I've built</p>
+      <div class="projects-grid">
+        <article class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/tastybites-demo.jpg" alt="TastyBites Restaurant - Complete restaurant website demo" loading="lazy">
+            <div class="project-overlay">
+              <a href="projects\tastybites\tastybites.html" class="btn btn-primary">View Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>TastyBites Restaurant</h3>
+            <p>Complete restaurant site with menu, gallery, WhatsApp ordering, and reservation system.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="images\freelancer-demo.jpg" alt="Freelancer Portfolio - Professional portfolio website" loading="lazy">
+            <div class="project-overlay">
+              <a href="projects\freelancer\freelancer.html" class="btn btn-primary">View Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Freelancer Portfolio</h3>
+            <p>Clean portfolio with project showcase, testimonials, and contact features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Responsive</span>
+              <span class="tech-tag">Animations</span>
+              <span class="tech-tag">Contact Form</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="images/startup-demo.jpg" alt="Startup Landing Page - Modern business landing page" loading="lazy">
+            <div class="project-overlay">
+              <a href="projects/startup/startup.html" class="btn btn-primary">View Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Startup Landing Page</h3>
+            <p>Modern SaaS-style landing page with pricing, features, and lead capture.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Landing Page</span>
+              <span class="tech-tag">CTA Optimized</span>
+              <span class="tech-tag">SEO Ready</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-bio">
+          <img src="portfolio/images/profile.jpg" alt="Abdul Muhaimin - Web Developer" class="profile-image">
+          <div class="bio-text">
+            <h3>Abdul Muhaimin</h3>
+            <p class="bio-subtitle"> Front-End Web Developer</p>
+            <p>I'm a passionate web developer  who loves creating clean, modern websites that actually work. I specialize in building fast, responsive sites for small businesses, restaurants, and freelancers.</p>
+            <p><strong>No frameworks. No bloat. Just pure HTML/CSS/JS that delivers results.</strong></p>
+            <div class="skills-grid">
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Responsive Design</span>
+              <span class="skill">SEO</span>
+              <span class="skill">WhatsApp API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a project? Let's discuss it. I reply within 24 hours.</p>
+      
+      <div class="contact-wrapper">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" id="user_name" name="user_name" placeholder="Your Name *" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="user_email" name="user_email" placeholder="Your Email *" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Tell me about your project *" rows="5" required></textarea>
+            <span class="error-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" disabled>
+            <span class="btn-text">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+
+        <div class="contact-info-box">
+          <h3>Other Ways to Connect</h3>
+          <div class="contact-methods">
+            <a href="mailto:pakabdul54@gmail.com" class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <span>Email Me</span>
+            </a>
+            <a href="https://wa.me/923288735509" class="contact-method whatsapp" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp Chat</span>
+            </a>
+            <a href="tel:+923288735509" class="contact-method">
+              <i class="fas fa-phone"></i>
+              <span>Call Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-top">
+        <a href="#home" class="logo">
+          <i class="fas fa-code"></i> Abdul
+        </a>
+      </div>
+      <p>© 2026 Abdul Muhaimin.  <!--<i class="fas fa-heart"></i>--></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

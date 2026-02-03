@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBites | Best Food Delivery in Town</title>
+    <link rel="stylesheet" href="tastybites.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="TastyBites - Delicious food delivered fast. Fresh meals trusted by 5000+ customers. Order now!">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <i class="fas fa-utensils"></i>
+            <p>Preparing Your Delicious Experience...</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                TastyBites
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#deals" class="nav-link">Deals</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#order" class="nav-link">Order</a>
+                <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Delicious Food, Delivered Fast</h1>
+                <p class="hero-subtitle">Fresh meals crafted with love, trusted by 5000+ happy customers</p>
+                <div class="hero-stats">
+                    <span><i class="fas fa-star"></i> 4.9 Rating</span>
+                    <span><i class="fas fa-clock"></i> 25 min delivery</span>
+                </div>
+                <button class="cta-button primary" onclick="scrollToOrder()">
+                    <i class="fas fa-shopping-bag"></i> Order Now
+                </button>
+                <button class="cta-button secondary" onclick="scrollToMenu()">
+                    <i class="fas fa-eye"></i> Explore Menu
+                </button>
+            </div>
+        </section>
+
+        <section class="why-choose" id="why">
+            <div class="container">
+                <h2 class="section-title">Why Choose TastyBites?</h2>
+                <div class="why-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🍃</div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Sourced daily from local markets for maximum freshness</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Average delivery time of just 25 minutes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Top Rated</h3>
+                        <p>4.9/5 from 5000+ satisfied customers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Secure Payment</h3>
+                        <p>SSL encrypted payments with multiple options</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals" id="deals">
+            <div class="container">
+                <h2 class="section-title">🔥 Special Deals Today</h2>
+                <div class="grid">
+                    <div class="card deal-card" data-name="Family Combo" data-price="15.99">
+                        <div class="card-image">
+                            <i class="fas fa-users"></i>
+                            <div class="deal-badge">Family</div>
+                        </div>
+                        <h3>Family Combo</h3>
+                        <p>Serves 4 people</p>
+                        <div class="price">$15.99</div>
+                        <button class="add-btn" onclick="addToCart('Family Combo', 15.99)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                    <div class="card deal-card" data-name="Burger Feast" data-price="12.99">
+                        <div class="card-image">
+                            <i class="fas fa-hamburger"></i>
+                            <div class="deal-badge">Popular</div>
+                        </div>
+                        <h3>Burger Feast</h3>
+                        <p>2 burgers + fries + drink</p>
+                        <div class="price">$12.99</div>
+                        <button class="add-btn" onclick="addToCart('Burger Feast', 12.99)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                    <div class="card deal-card" data-name="Student Box" data-price="6.99">
+                        <div class="card-image">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="deal-badge">Student</div>
+                        </div>
+                        <h3>Student Box</h3>
+                        <p>Main + drink + discount</p>
+                        <div class="price">$6.99</div>
+                        <button class="add-btn" onclick="addToCart('Student Box', 6.99)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <h2 class="section-title">🍕 Best Sellers</h2>
+                <div class="grid">
+                    <div class="card menu-card" data-name="Classic Burger" data-price="9.99">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop" alt="Classic Burger" loading="lazy">
+                        <h3>Classic Burger</h3>
+                        <p>Juicy beef patty with fresh veggies</p>
+                        <div class="price">$9.99</div>
+                        <button class="add-btn" onclick="addToCart('Classic Burger', 9.99)">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                    <div class="card menu-card" data-name="Margherita Pizza" data-price="12.99">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop" alt="Margherita Pizza" loading="lazy">
+                        <h3>Margherita Pizza</h3>
+                        <p>Fresh mozzarella and basil</p>
+                        <div class="price">$12.99</div>
+                        <button class="add-btn" onclick="addToCart('Margherita Pizza', 12.99)">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                    <div class="card menu-card" data-name="Fried Chicken" data-price="11.99">
+                        <img src="https://images.unsplash.com/photo-1625940940380-51a8c8d88c88?w=400&h=300&fit=crop" alt="Fried Chicken" loading="lazy">
+                        <h3>Fried Chicken</h3>
+                        <p>Crispy golden fried chicken pieces</p>
+                        <div class="price">$11.99</div>
+                        <button class="add-btn" onclick="addToCart('Fried Chicken', 11.99)">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing food quality and super fast delivery! Best in town."</p>
+                        <div class="reviewer">- Ali Khan</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Love the fresh ingredients. Delivery driver was very polite."</p>
+                        <div class="reviewer">- Sara Ahmed</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Student box is a lifesaver! Great value for money."</p>
+                        <div class="reviewer">- Ahmed R.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order" id="order">
+            <div class="container">
+                <h2 class="section-title">Your Order Summary</h2>
+                <div class="order-summary" id="orderSummary">
+                    <p>Your cart is empty. Add some delicious items!</p>
+                </div>
+                <div class="total-section">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span class="total-price" id="totalPrice">$0.00</span>
+                    </div>
+                </div>
+                <textarea id="orderBox" readonly placeholder="Your order will appear here..."></textarea>
+                <div class="order-buttons">
+                    <button class="cta-button primary" onclick="sendWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                    <button class="cta-button secondary" onclick="clearCart()">
+                        <i class="fas fa-trash"></i> Clear Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-utensils"></i>
+                    <div>
+                        <h3>TastyBites</h3>
+                        <p>Delicious food, delivered fast</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#deals">Deals</a>
+                    <a href="#order">Order</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fas fa-envelope"></i> hello@tastybites.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TastyBites. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tastybites.js"></script>
+</body>
+</html>

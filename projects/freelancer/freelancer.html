@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Johnson | Freelance Designer & Developer</title>
+  <link rel="stylesheet" href="freelancer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      <i class="fas fa-palette"></i> Sarah
+    </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#work" class="nav-link" data-section="work">Work</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-crown"></i>
+        <span>Freelance Designer & Developer</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Sarah</span><br>
+        I Design & Build Beautiful Websites
+      </h1>
+      <p class="hero-subtitle">Clean, responsive websites that convert visitors into customers. 50+ successful projects.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-target="25">0</div>
+          <div class="stat-label">Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-target="98">0</div>
+          <div class="stat-label">% Success</div>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Start Project
+        </a>
+        <a href="#work" class="btn btn-secondary">
+          <i class="fas fa-eye"></i> View Work
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-card">
+        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" alt="Sarah Johnson" class="profile-img">
+        <div class="profile-status">
+          <div class="status-dot"></div>
+          <span>Available Now</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section work">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Handpicked projects showcasing my design & development skills</p>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=250&fit=crop" alt="E-commerce" loading="lazy">
+          <div class="project-overlay">
+            <h3>Fashion Store</h3>
+            <p>Shopify + Custom Animations</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Shopify</span>
+            <span class="tag">React</span>
+            <span class="tag">CSS</span>
+          </div>
+          <h3>Fashion Ecommerce Platform</h3>
+          <p>47% conversion increase through UX improvements</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="branding">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=250&fit=crop" alt="Coffee Brand" loading="lazy">
+          <div class="project-overlay">
+            <h3>BeanBuzz Coffee</h3>
+            <p>Complete Brand Identity</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Logo</span>
+          </div>
+          <h3>BeanBuzz Coffee Brand</h3>
+          <p>Full visual identity system & packaging design</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mobile">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=250&fit=crop" alt="Fitness App" loading="lazy">
+          <div class="project-overlay">
+            <h3>FitTrack App</h3>
+            <p>Fitness Tracking Mobile App</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Figma</span>
+            <span class="tag">API</span>
+          </div>
+          <h3>FitTrack Mobile App</h3>
+          <p>Cross-platform fitness app with social features</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=250&fit=crop" alt="Dashboard" loading="lazy">
+          <div class="project-overlay">
+            <h3>Analytics Pro</h3>
+            <p>SaaS Dashboard</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Charts</span>
+            <span class="tag">API</span>
+          </div>
+          <h3>SaaS Analytics Dashboard</h3>
+          <p>Real-time data visualization platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Hi, I'm Sarah</h3>
+        <p>Freelance UI/UX Designer & Developer with 5+ years experience</p>
+        <p>I create digital products that users love. From concept to launch, I handle every aspect of web design and development.</p>
+        <div class="skills-grid">
+          <span class="skill"><i class="fab fa-html5"></i> HTML/CSS</span>
+          <span class="skill"><i class="fab fa-js-square"></i> JavaScript</span>
+          <span class="skill"><i class="fab fa-react"></i> React</span>
+          <span class="skill"><i class="fab fa-figma"></i> Figma</span>
+        </div>
+      </div>
+      <div class="about-experience">
+        <div class="experience-item">
+          <div class="experience-date">2020 - Present</div>
+          <div class="experience-role">Freelance Designer</div>
+          <div>50+ Clients Worldwide</div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-date">2018 - 2020</div>
+          <div class="experience-role">UI/UX Designer</div>
+          <div>TechCorp Agency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonials">
+    <h2 class="section-title">Client Reviews</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="John" class="avatar">
+          <div>
+            <h4>John Smith</h4>
+            <span>CEO, FashionCo</span>
+          </div>
+        </div>
+        <p>"Sarah transformed our website. Sales increased 3x in 3 months!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Maria" class="avatar">
+          <div>
+            <h4>Maria Garcia</h4>
+            <span>BeanBuzz Coffee</span>
+          </div>
+        </div>
+        <p>"Perfect branding that customers love. Highly recommend!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="David" class="avatar">
+          <div>
+            <h4>David Wilson</h4>
+            <span>CTO, SaaS Startup</span>
+          </div>
+        </div>
+        <p>"Technical excellence + beautiful design. On time, under budget."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Start Your Project</h2>
+    <p class="section-subtitle">Ready to work together? Send me a message.</p>
+    <div class="contact-wrapper">
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="user_name" placeholder="Your Name *" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" name="user_email" placeholder="Your Email *" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+          <span class="error-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" disabled>
+          <span class="btn-text">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </span>
+          <div class="btn-loader"></div>
+        </button>
+      </form>
+      <div class="contact-info">
+        <h3>Connect Directly</h3>
+        <div class="contact-methods">
+          <a href="mailto:sarah@example.com" class="contact-method">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+          <a href="#" class="contact-method whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp Chat
+          </a>
+          <a href="#" class="contact-method">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <p>© 2026 Sarah Johnson. Built with </i>.</p>
+  </footer>
+
+  <script>
+    emailjs.init('YOUR_USER_ID');
+  </script>
+  <script src="freelancer.js"></script>
+</body>
+</html>
