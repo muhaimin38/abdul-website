@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://pixelsage.com/</loc>
-    <lastmod>2026-02-03</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://pixelsage.com/#services</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://pixelsage.com/#projects</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://pixelsage.com/#contact</loc>
-    <priority>0.8</priority>
-  </url>
+   <url>
+      <loc>https://pixelsage.netlify.app/</loc>
+      <lastmod>2026-02-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <!-- Add more pages if you have -->
+   <url>
+      <loc>https://pixelsage.netlify.app/work</loc>
+      <lastmod>2026-02-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://pixelsage.netlify.app/about</loc>
+      <lastmod>2026-02-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://pixelsage.netlify.app/contact</loc>
+      <lastmod>2026-02-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
